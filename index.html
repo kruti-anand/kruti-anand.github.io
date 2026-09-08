@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruti Anand | Senior Technical Program Manager</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        header {
+            background: white;
+            padding: 22px 0;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #4b5563;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #111827;
+        }
+
+        .hero {
+            background: white;
+            padding: 110px 0 100px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.05;
+            margin-bottom: 18px;
+            color: #111827;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+            font-weight: 500;
+            color: #475569;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            font-size: 20px;
+            color: #64748b;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 23px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .primary {
+            background: #111827;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+            background: white;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        section:nth-child(even) {
+            background: white;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #111827;
+        }
+
+        .about {
+            max-width: 850px;
+            font-size: 18px;
+            color: #475569;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .impact-card {
+            background: white;
+            padding: 30px 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+        }
+
+        .impact-number {
+            font-size: 38px;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        .impact-label {
+            color: #64748b;
+            margin-top: 5px;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .expertise-card {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .expertise-card h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .expertise-card p {
+            color: #64748b;
+        }
+
+        .career-item {
+            border-left: 3px solid #cbd5e1;
+            padding: 0 0 35px 25px;
+            margin-bottom: 30px;
+        }
+
+        .career-item h3 {
+            font-size: 20px;
+            color: #111827;
+        }
+
+        .career-item .company {
+            color: #475569;
+            font-weight: 600;
+        }
+
+        .career-item .date {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .case-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .case-card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .case-card p {
+            color: #64748b;
+        }
+
+        .contact {
+            text-align: center;
+            background: #111827;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .contact a {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .impact-grid,
+            .expertise-grid,
+            .case-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav div:last-child {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KRUTI ANAND</div>
+
+            <div>
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#career">Career</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="container">
+        <h1>Senior Technical<br>Program Manager</h1>
+
+        <h2>Technology Transformation &amp; AI Enablement</h2>
+
+        <p>
+            I lead complex technology programs at the intersection of
+            product, engineering, and business strategy—bringing structure
+            to ambiguity, strengthening delivery predictability, and
+            enabling technology transformation.
+        </p>
+
+        <a class="button primary" href="#career">View My Experience</a>
+        <a class="button secondary" href="#contact">Connect With Me</a>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h2 class="section-title">Selected Impact</h2>
+
+        <div class="impact-grid">
+
+            <div class="impact-card">
+                <div class="impact-number">15+</div>
+                <div class="impact-label">
+                    Years of technology &amp; program leadership
+                </div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">20–30%</div>
+                <div class="impact-label">
+                    Improvement in delivery predictability
+                </div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">~40%</div>
+                <div class="impact-label">
+                    Reduction in requirements rework
+                </div>
+            </div>
+
+            <div class="impact-card">
+                <div class="impact-number">100+</div>
+                <div class="impact-label">
+                    Enterprise releases supported
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+
+        <h2 class="section-title">About</h2>
+
+        <div class="about">
+
+            <p>
+                I am a technology program and transformation leader with
+                15+ years of experience spanning enterprise software
+                delivery, modernization, Agile transformation, and
+                cross-functional technology programs.
+            </p>
+
+            <p>
+                I work across Product, Engineering, Architecture, DevOps,
+                QA, Security, Data, and technology partners to turn complex
+                priorities into clear execution plans, manage technical
+                dependencies and risks, and create predictable delivery.
+            </p>
+
+            <p>
+                My recent focus has been on applying generative AI to
+                software delivery—improving requirements quality,
+                reducing rework, and accelerating the path from
+                requirements to implementation.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section id="expertise">
+    <div class="container">
+
+        <h2 class="section-title">What I Bring</h2>
+
+        <div class="expertise-grid">
+
+            <div class="expertise-card">
+                <h3>Technology Program Leadership</h3>
+                <p>
+                    Program strategy, governance, roadmaps, dependencies,
+                    risks, operating rhythms, and execution.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Product + Engineering Alignment</h3>
+                <p>
+                    Connecting business priorities, product intent,
+                    technical scope, architecture, and implementation.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>Technology Transformation</h3>
+                <p>
+                    Modernization, SDLC improvement, release readiness,
+                    integration, and delivery transformation.
+                </p>
+            </div>
+
+            <div class="expertise-card">
+                <h3>AI Enablement</h3>
+                <p>
+                    Generative AI, AI-enabled SDLC workflows, requirements
+                    automation, and responsible AI adoption.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="case-studies">
+    <div class="container">
+
+        <h2 class="section-title">Featured Case Studies</h2>
+
+        <div class="case-grid">
+
+            <div class="case-card">
+                <h3>AI-Enabled Requirements to Implementation</h3>
+                <p>
+                    Connecting requirements, technical design, codebase
+                    analysis, and implementation to improve requirements
+                    quality and reduce rework.
+                </p>
+            </div>
+
+            <div class="case-card">
+                <h3>Improving Enterprise Delivery Predictability</h3>
+                <p>
+                    Strengthening readiness, dependency management,
+                    technical impact assessment, and risk practices
+                    across a large Agile technology organization.
+                </p>
+            </div>
+
+            <div class="case-card">
+                <h3>Path-to-Production Governance</h3>
+                <p>
+                    Coordinating Architecture, Security, Data,
+                    Infrastructure, Integration, and application teams
+                    across enterprise releases.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="career">
+    <div class="container">
+
+        <h2 class="section-title">Career</h2>
+
+        <div class="career-item">
+            <h3>Senior Technical Program Manager / Agile Delivery Lead</h3>
+            <div class="company">Fannie Mae</div>
+            <div class="date">2020 – 2026</div>
+            <p>
+                Led cross-functional technology delivery across Product,
+                Engineering, Architecture, DevOps, QA, Security, Data,
+                and technology partners.
+            </p>
+        </div>
+
+        <div class="career-item">
+            <h3>Lead Requirements Analyst</h3>
+            <div class="company">Navy Federal Credit Union</div>
+            <div class="date">2019 – 2020</div>
+            <p>
+                Led requirements analysis and delivery support for
+                digital banking modernization initiatives.
+            </p>
+        </div>
+
+        <div class="career-item">
+            <h3>Lead Analyst / Scrum Master</h3>
+            <div class="company">CGI → Fannie Mae</div>
+            <div class="date">2015 – 2019</div>
+            <p>
+                Led Agile delivery, requirements analysis, data governance,
+                backlog management, and enterprise application modernization.
+            </p>
+        </div>
+
+        <div class="career-item">
+            <h3>Senior Business Systems Analyst / Scrum Master</h3>
+            <div class="company">ASRC Federal → U.S. Department of Labor</div>
+            <div class="date">2012 – 2015</div>
+            <p>
+                Supported federal modernization initiatives through
+                requirements analysis, testing, SQL analysis, UAT,
+                and stakeholder engagement.
+            </p>
+        </div>
+
+        <div class="career-item">
+            <h3>SAP FICO Consultant</h3>
+            <div class="company">Owens Corning</div>
+            <div class="date">2011 – 2012</div>
+            <p>
+                Supported global SAP upgrades and FSCM implementation
+                initiatives through functional analysis and testing.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h2 class="section-title">AI &amp; Technology</h2>
+
+        <div class="about">
+
+            <p>
+                <strong>AWS Certified AI Practitioner</strong>
+            </p>
+
+            <p>
+                Focus areas include Generative AI, AI-enabled software
+                delivery, workflow automation, requirements automation,
+                engineering productivity, GitHub Copilot, and Custom GPTs.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+
+        <h2 class="section-title">Let's Connect</h2>
+
+        <p>
+            Interested in technology transformation, technical program
+            leadership, or AI-enabled delivery?
+        </p>
+
+        <a class="button primary"
+           href="mailto:krutiz@yahoo.com">
+           Email Me
+        </a>
+
+        <a class="button secondary"
+           href="https://www.linkedin.com/in/kruti-anand"
+           target="_blank">
+           LinkedIn
+        </a>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    © 2026 Kruti Anand · Senior Technical Program Manager
+</footer>
+
+</body>
+</html>
