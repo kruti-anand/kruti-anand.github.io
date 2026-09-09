@@ -280,9 +280,17 @@ nav div a {
         margin-bottom: 25px;
     }
 
-    .contact a {
-        color: white;
-    }
+    /* Only primary button gets white text */
+.contact a.button.primary {
+    color: white;
+}
+
+/* Secondary button override */
+.contact .secondary {
+    color: #334155 !important;
+    background: white;
+    border: 1px solid #cbd5e1;
+}
 
     footer {
         text-align: center;
