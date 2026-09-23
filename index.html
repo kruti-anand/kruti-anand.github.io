@@ -1,74 +1,3 @@
-/* === Accelerator Color Palette Override === */
-
-:root {
-    --text-primary: #1e1b4b;      /* deep navy */
-    --text-secondary: #475569;    /* blue-gray */
-    --text-muted: #64748b;        /* soft blue-gray */
-
-    --accent: #3b82f6;            /* accelerator blue */
-    --accent-dark: #1e40af;       /* deeper blue */
-    --accent-soft: #eef4ff;       /* soft blue surface */
-
-    --border: #dbe4ff;            /* blue-gray border */
-}
-
-/* HERO */
-.hero {
-    background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
-}
-
-.hero h1 {
-    color: var(--text-primary);
-}
-
-.hero h2 {
-    color: var(--text-secondary);
-}
-
-.hero p {
-    color: var(--text-muted);
-}
-
-/* BUTTONS */
-.button.primary {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: white;
-}
-
-.button.primary:hover {
-    background: var(--accent-dark);
-}
-
-.button.secondary {
-    background: var(--accent-soft);
-    border-color: var(--border);
-    color: var(--text-primary);
-}
-
-/* HEADSHOT BORDER */
-.header-headshot {
-    border-color: var(--border);
-}
-
-/* CARDS + BORDERS */
-.impact-card,
-.expertise-card,
-.case-card,
-.career-item,
-header {
-    border-color: var(--border);
-}
-
-/* SECTION TITLES */
-.section-title {
-    color: var(--text-primary);
-}
-
-/* GENERAL TEXT */
-body {
-    color: var(--text-secondary);
-}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +20,7 @@ body {
     .headshot {
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid #e5e7eb;
+        border: 3px solid #dbe4ff;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -102,11 +31,11 @@ body {
         width: 208px;
         height: 208px;
         margin: 25px auto 50px auto;
-        border: 4px solid #e5e7eb;
+        border: 4px solid #dbe4ff;
     }
     .career-header {
         font-size: 20px;
-        color: #111827;
+        color: #1e1b4b;
         font-weight: 600;
         margin-bottom: 18px;
     }
@@ -128,9 +57,9 @@ body {
     }
 
     header {
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
         padding: 22px 0;
-        border-bottom: 1px solid #e5e7eb;
+        border-bottom: 1px solid #dbe4ff;
         position: sticky;
         top: 0;
         z-index: 10;
@@ -166,11 +95,11 @@ nav div a {
         font-size: 14px;
 }
     nav a:hover {
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .hero {
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
         padding: 110px 0 100px;
     }
 
@@ -178,7 +107,7 @@ nav div a {
         font-size: 50px;
         line-height: 1.05;
         margin-bottom: 18px;
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .hero h2 {
@@ -206,32 +135,32 @@ nav div a {
     }
 
     .primary {
-        background: #111827;
+        background: #1e1b4b;
         color: white;
     }
 
     .secondary {
-        border: 1px solid #cbd5e1;
+        border: 1px solid #c3d4ff;
         color: #334155;
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
     }
     .contact .secondary {
     color: #334155 !important;
-    background: white;
-    border: 1px solid #cbd5e1;
+    background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
+    border: 1px solid #c3d4ff;
 }
     section {
         padding: 40px 0 80px 0;
     }
 
     section:nth-child(even) {
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
     }
 
     .section-title {
         font-size: 30px;
         margin-bottom: 35px;
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .about {
@@ -251,16 +180,16 @@ nav div a {
     }
 
     .impact-card {
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
         padding: 30px 20px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid #dbe4ff;
         border-radius: 8px;
     }
 
     .impact-number {
         font-size: 38px;
         font-weight: 700;
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .impact-label {
@@ -276,15 +205,15 @@ nav div a {
     }
 
     .expertise-card {
-        background: white;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
         padding: 30px;
         border-radius: 8px;
-        border: 1px solid #e5e7eb;
+        border: 1px solid #dbe4ff;
     }
 
     .expertise-card h3 {
         margin-bottom: 10px;
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .expertise-card p {
@@ -303,7 +232,7 @@ nav div a {
     .ai-tech-category h3 {
         font-size: 18px;
         font-weight: 600;
-        color: #111827;
+        color: #1e1b4b;
         margin-bottom: 8px;
     }
 
@@ -314,19 +243,19 @@ nav div a {
     }
 
     .ai-tech-category strong {
-        color: #111827;
+        color: #1e1b4b;
     }
 
     /* Career Section */
     .career-item {
-        border-left: 3px solid #cbd5e1;
+        border-left: 3px solid #c3d4ff;
         padding: 0 0 35px 25px;
         margin-bottom: 30px;
     }
 
     .career-item h3 {
         font-size: 20px;
-        color: #111827;
+        color: #1e1b4b;
         margin-bottom: 6px;
     }
 
@@ -357,15 +286,15 @@ nav div a {
     }
 
     .case-card {
-        background: white;
-        border: 1px solid #e5e7eb;
+        background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
+        border: 1px solid #dbe4ff;
         padding: 30px;
         border-radius: 8px;
     }
 
     .case-card h3 {
         margin-bottom: 12px;
-        color: #111827;
+        color: #1e1b4b;
     }
 
     .case-card p {
@@ -374,7 +303,7 @@ nav div a {
 
     .contact {
         text-align: center;
-        background: #111827;
+        background: #1e1b4b;
         color: white;
     }
 
@@ -383,7 +312,7 @@ nav div a {
     }
 
     .contact p {
-        color: #cbd5e1;
+        color: #c3d4ff;
         margin-bottom: 25px;
     }
 
@@ -395,14 +324,14 @@ nav div a {
 /* Secondary button override */
 .contact .secondary {
     color: #334155 !important;
-    background: white;
-    border: 1px solid #cbd5e1;
+    background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
+    border: 1px solid #c3d4ff;
 }
 
     footer {
         text-align: center;
         padding: 25px;
-        background: #111827;
+        background: #1e1b4b;
         color: #94a3b8;
         font-size: 13px;
     }
