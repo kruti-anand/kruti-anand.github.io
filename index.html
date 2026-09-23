@@ -301,24 +301,33 @@ nav div a {
         color: #64748b;
     }
 
-    .contact {
-        text-align: center;
-        background: #1e1b4b;
-        color: white;
-    }
+.contact {
+    text-align: center;
+    background: #1e1b4b;
+    color: white;
+}
 
-    .contact .section-title {
-        color: white;
-    }
+/* Make "Let's Connect" black */
+.contact .section-title {
+    color: #000000 !important;
+}
 
-    .contact p {
-        color: #c3d4ff;
-        margin-bottom: 25px;
-    }
+/* Contact paragraph stays muted blue */
+.contact p {
+    color: #c3d4ff;
+    margin-bottom: 25px;
+}
 
-    /* Only primary button gets white text */
+/* Primary button stays white text */
 .contact a.button.primary {
     color: white;
+}
+
+/* Secondary button override */
+.contact .secondary {
+    color: #334155 !important;
+    background: white;
+    border: 1px solid #cbd5e1;
 }
 
 /* Secondary button override */
