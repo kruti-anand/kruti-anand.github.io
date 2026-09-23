@@ -1,3 +1,74 @@
+/* === Accelerator Color Palette Override === */
+
+:root {
+    --text-primary: #1e1b4b;      /* deep navy */
+    --text-secondary: #475569;    /* blue-gray */
+    --text-muted: #64748b;        /* soft blue-gray */
+
+    --accent: #3b82f6;            /* accelerator blue */
+    --accent-dark: #1e40af;       /* deeper blue */
+    --accent-soft: #eef4ff;       /* soft blue surface */
+
+    --border: #dbe4ff;            /* blue-gray border */
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(180deg, #eef4ff 0%, #ffffff 60%);
+}
+
+.hero h1 {
+    color: var(--text-primary);
+}
+
+.hero h2 {
+    color: var(--text-secondary);
+}
+
+.hero p {
+    color: var(--text-muted);
+}
+
+/* BUTTONS */
+.button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.button.primary:hover {
+    background: var(--accent-dark);
+}
+
+.button.secondary {
+    background: var(--accent-soft);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+
+/* HEADSHOT BORDER */
+.header-headshot {
+    border-color: var(--border);
+}
+
+/* CARDS + BORDERS */
+.impact-card,
+.expertise-card,
+.case-card,
+.career-item,
+header {
+    border-color: var(--border);
+}
+
+/* SECTION TITLES */
+.section-title {
+    color: var(--text-primary);
+}
+
+/* GENERAL TEXT */
+body {
+    color: var(--text-secondary);
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
